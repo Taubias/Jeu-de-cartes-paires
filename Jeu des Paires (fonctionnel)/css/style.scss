@@ -1,0 +1,65 @@
+// $body : white;
+$cellule : rgb(42, 119, 170);
+
+html {
+    /* L'image est positionnée en fond et est centrée */
+    background: url(Rivendel.jpg) no-repeat center center fixed;
+    /* Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+    h1
+{
+	color: white;
+
+    text-align: center;
+     border: 1px solid #000000; /*Titre encadré*/
+     background-color: black; /*Fond titre*/
+ }
+
+// body{
+    // background: $body;
+// }
+/*
+div.board{
+    height:500px;
+    display:flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+}
+*/
+
+div.board{
+    width:500px;
+    height:800px;
+    display:flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    img{
+        display:none;
+    }
+}
+
+div.cellule{
+    border:3px solid rgb(1, 83, 121);
+    width:100px;
+    border-radius:8px;
+    height:160px;
+    background:$cellule;
+    text-align:center;
+    vertical-align:center;
+    line-height:160px;
+    color:$body;
+    font-size:120px;
+    cursor:pointer;
+    &::after{
+        content:"•";
+    }
+
+}

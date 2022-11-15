@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+    margin:  0;
+
+    background: url("images/dessin-chateau-fort.jpg") no-repeat fixed center/cover;
+    height: 100vh;
+    overflow: hidden;
+        
+    }
+
+    ::selection {
+        background: black;
+    }
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+        color: #ad1f1fc7;
+        text-shadow: #2825044f 5px 0px 0px;
+        font-family : 'Silkscreen', sans-serif ;
+        position: relative;
+        margin-top: 0.4rem;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 140%;
+        min-width: 100%;
+        position: absolute;
+
+    }
+
+    .btn {
+        padding: 0.7rem;
+        border-radius: 0.7rem;
+        background: rgb(189, 3, 3);
+        color: aliceblue;
+        box-shadow: 0 2px 12px 5px rgb(255, 255, 255);
+        cursor: pointer;
+     
+    }
+    .btn:hover {
+        background: black;
+        color: red;
+        transition: 0.5s;
+
+
+    }
+  

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@600 & display=swap');
+
+html {
+  /* L'image est positionnée en fond et est centrée */
+  background: url(Rivendel.jpg) no-repeat center center fixed;
+  /* Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+/* body { */
+  /* background: white; */
+/* } */
+
+/*
+div.board{
+    height:500px;
+    display:flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+}
+*/
+
+::selection {
+  background: black;
+}
+h1{
+  color: white;
+  text-align: center;
+  /* font-style: oblique; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Dancing Script', cursive, "Arial Black", sans-serif;
+}
+
+div.board {
+  width: 500px;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.board img {
+  display: none;
+}
+
+div.cellule {
+  /* border: 3px solid 	#B56917; */
+  border: 3px solid;
+  border-image: linear-gradient(#422404, #B56917) 30;
+  width: 100px;
+  border-radius: 8px;
+  height: 160px;
+  background-image: url("cardBack.jpg") ;
+  background-repeat: no-repeat;
+  background-position: center ;
+  /* text-align: center; */
+  /* vertical-align: center; */
+  /* line-height: 160px; */
+  /* color: white; */
+  /* font-size: 150px; */
+  cursor: pointer;
+}
+
+
+/**AFTER PSEUDO CLASSE CSS 2 PERMETTANT D'INTERAGIR A LA FIN DE LA BALISE (S'UTILISE SOUVENT AVEC CONTENT)**/
+
+div.cellule::after {
+  content: "•";
+}
+/*# sourceMappingURL=style.css.map */
